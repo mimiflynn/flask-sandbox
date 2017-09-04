@@ -21,8 +21,8 @@ def styles(path):
     return send_from_directory('styles', path)
 
 
-@app.route('/timelapse')
-def timelapse():
+@app.route('/dimensions')
+def dimensions():
     height = request.args.get('height')
     width = request.args.get('width')
     return render_template('params.html', dimensions=Dimensions(height, width))
