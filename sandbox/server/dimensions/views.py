@@ -12,6 +12,11 @@ class Dimensions(object):
         self.width = width
 
 
+def timelapse(**kwargs):
+    print('start taking timelapse at {:%Y-%m-%d_%H-%M-%S}'.format(datetime.datetime.now()))
+    print('timelapse parameters')
+
+
 # http://localhost:5000/dimensions?height=25&width=500
 @dimensions_blueprint.route('/dimensions')
 def dimensions():

@@ -3,5 +3,5 @@
 ```
 pip install flask
 pip install flask_script
-python app.py
+python manage.py runserver
 ```
